@@ -10,7 +10,7 @@ class School
 
   def add_student(student, grade)
     if @roster[grade].include?(student) == false
-      @roster[grade] << student
+      @roster[grade] = Array.new << student
     end
   end
 end
