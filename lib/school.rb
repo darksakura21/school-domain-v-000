@@ -13,7 +13,7 @@ class School
       if @roster[grade].include?(student) == false
         @roster[grade] << student
       end
-    else 
+    else
       @roster[grade] = Array.new << student
     end
   end
