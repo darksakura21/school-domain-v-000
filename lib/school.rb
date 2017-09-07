@@ -1,7 +1,7 @@
 # code here!
 class School
   attr_reader :name, :roster
-  attr_accessor 
+  attr_accessor
 
   def initialize(name)
     @name = name
@@ -9,6 +9,7 @@ class School
   end
 
   def add_student(student, grade)
-    @roster[grade] = student
+    if @roster[grade].include?(student) == false
+      @roster[grade] << student
   end
 end
