@@ -10,13 +10,13 @@ class School
 
   def add_student(student, grade)
     if @roster.has_key?(grade)
-      @roster[grade].include?(student) == false ? @roster[grade] << student
+      @roster[grade].include?(student) == false ? @roster[grade] << student : nil
     else
       @roster[grade] = Array.new << student
     end
   end
 
-  
 
-  
+
+
 end
